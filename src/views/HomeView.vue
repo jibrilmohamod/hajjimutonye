@@ -1,7 +1,11 @@
 <template>
- <div></div>
+ <div>
+  <TheHero></TheHero>
+ </div>
 </template>
 
-<script setup></script>
+<script setup>
+ import TheHero from "../components/TheHero.vue"
+</script>
 
 <style lang="scss" scoped></style>
