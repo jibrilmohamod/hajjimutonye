@@ -1,9 +1,9 @@
 <template>
  <div>
-  <nav class="border flex justify-center">
-   <RouterLink to="/" class="px-7">WORK</RouterLink>
-   <RouterLink to="/about" class="px-7">DEEP DIVE</RouterLink>
-   <RouterLink to="/about" class="px-7">JOURNAL</RouterLink>
+  <nav class="border flex justify-center text-xl">
+   <RouterLink to="/" class="px-14">WORK</RouterLink>
+   <RouterLink to="/about" class="px-14">DEEP DIVE</RouterLink>
+   <RouterLink to="/about" class="px-14">JOURNAL</RouterLink>
   </nav>
  </div>
 </template>
