@@ -1,7 +1,7 @@
 <template>
  <div class="bg-zinc-900 w-full text-yellow-50">
   <!-- contact details -->
-  <div class="flex text-2xl px-16 gap-10">
+  <div class="flex text-xl px-16 gap-10">
    <h1>CONTACT ME</h1>
    <ul>
     <li>
