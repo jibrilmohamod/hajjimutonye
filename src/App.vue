@@ -1,18 +1,18 @@
 <script setup>
- import { RouterView } from "vue-router"
- import TheName from "./components/TheName.vue"
- import TheFooter from "./components/TheFooter.vue"
- //  import TheNav from "./components/TheNav.vue"
+import { RouterView } from "vue-router";
+import TheName from "./components/TheName.vue";
+import TheFooter from "./components/TheFooter.vue";
+//  import TheNav from "./components/TheNav.vue"
 </script>
 
 <template>
- <main class="">
-  <header>
-   <TheName></TheName>
-   <!-- <TheNav></TheNav> -->
-  </header>
- </main>
+  <main class="font-sans">
+    <header>
+      <TheName></TheName>
+      <!-- <TheNav></TheNav> -->
+    </header>
+  </main>
 
- <RouterView />
- <TheFooter />
+  <RouterView />
+  <TheFooter />
 </template>
