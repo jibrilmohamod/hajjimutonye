@@ -5,20 +5,29 @@
       <p class="text-5xl text-white">MY WORKS</p>
     </div>
     <!-- works -->
-    <div class="h-full w-full border">
-      <div v-for="project in projects" :key="project.id">
-        <img
-          :src="project.attributes.thumbnail.data.attributes.formats.medium.url"
-          alt=""
-        />
+    <div class="row flex h-[80vh] content-around justify-center">
+      <div
+        class="col-md-5 flex justify-center"
+        v-for="project in featuredProjects"
+        :key="project.id"
+      >
+        <router-link to="" class="h-[30vh]">
+          <img
+            :src="project.attributes.thumbnail.data.attributes.formats.small.url"
+            alt=""
+            class="h-full w-full"
+          />
+        </router-link>
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import { onMounted, ref } from "vue";
+import { computed, onMounted, ref } from "vue";
 import strapi from "../strapi/strapi";
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap";
 
 //  get projects from server
 
@@ -29,6 +38,10 @@ const getProjects = async () => {
     projects.value = res.data;
   });
 };
+
+const featuredProjects = computed(() => {
+  return projects.value.slice(0, 4);
+});
 
 onMounted(() => {
   getProjects();
