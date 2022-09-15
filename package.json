@@ -8,7 +8,9 @@
     "preview": "vite preview --port 4173"
   },
   "dependencies": {
+    "@popperjs/core": "^2.11.6",
     "autoprefixer": "^10",
+    "bootstrap": "^5.2.1",
     "pinia": "^2.0.17",
     "postcss": "^8",
     "strapi-sdk-js": "^2.2.0",
