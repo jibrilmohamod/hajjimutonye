@@ -1,11 +1,11 @@
 <template>
-  <div class="h-screen w-full bg-blue-900 px-32">
+  <div class="h-screen w-full bg-zinc-900 px-32">
     <!-- title -->
     <div class="w-full flex justify-center">
       <p class="text-5xl text-white">MY WORKS</p>
     </div>
     <!-- works -->
-    <div class="row flex h-[80vh] content-around justify-center">
+    <div class="row flex h-[80vh] w-[60vw] content-around justify-center mx-auto">
       <div
         class="col-md-5 flex justify-center"
         v-for="project in featuredProjects"
@@ -26,7 +26,7 @@
 <script setup>
 import { computed, onMounted, ref } from "vue";
 import strapi from "../strapi/strapi";
-import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/css/bootstrap-grid.min.css";
 import "bootstrap";
 
 //  get projects from server
