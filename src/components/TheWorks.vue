@@ -1,9 +1,7 @@
 <template>
   <div class="h-screen w-full bg-zinc-900 px-32">
     <!-- title -->
-    <div class="w-full flex justify-center">
-      <p class="text-5xl text-white">MY WORKS</p>
-    </div>
+    <TheHeader>MY WORK</TheHeader>
     <!-- works -->
     <div class="row flex h-[80vh] w-[60vw] content-around justify-center mx-auto">
       <div
@@ -28,13 +26,14 @@ import { computed, onMounted, ref } from "vue";
 import strapi from "../strapi/strapi";
 import "bootstrap/dist/css/bootstrap-grid.min.css";
 import "bootstrap";
+import TheHeader from "./ui/TheHeader.vue";
 
 //  get projects from server
 
 const projects = ref([]);
 
 const getProjects = async () => {
-  const res = await strapi.request("GET", "/projects?populate=deep").then((res) => {
+  await strapi.request("GET", "/projects?populate=deep").then((res) => {
     projects.value = res.data;
   });
 };
