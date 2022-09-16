@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-zinc-900 text-white">
+  <div class="bg-zinc-900 text-white w-full h-fit">
     <TheNav></TheNav>
     <div class="-red-600 py-8">
       <TheHeader>MY WORK</TheHeader>
