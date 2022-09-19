@@ -1,9 +1,9 @@
 <template>
-  <div class="h-screen w-full bg-zinc-900 px-32">
+  <div class="h-screen w-full bg-zinc-900 px-32 border flex flex-col items-center">
     <!-- title -->
     <TheHeader>MY WORK</TheHeader>
     <!-- works -->
-    <div class="row flex h-[80vh] w-[60vw] content-around justify-center mx-auto">
+    <div class="row flex h-[80vh] w-[60vw] content-around justify-center mx-auto border">
       <div
         class="col-md-5 flex justify-center"
         v-for="project in featuredProjects"
@@ -18,6 +18,7 @@
         </router-link>
       </div>
     </div>
+    <TheButton>SEE MORE</TheButton>
   </div>
 </template>
 
@@ -27,6 +28,7 @@ import strapi from "../strapi/strapi";
 import "bootstrap/dist/css/bootstrap-grid.min.css";
 import "bootstrap";
 import TheHeader from "./ui/TheHeader.vue";
+import TheButton from "./ui/TheButton.vue";
 
 //  get projects from server
 
