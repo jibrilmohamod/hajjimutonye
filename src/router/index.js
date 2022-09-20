@@ -1,7 +1,9 @@
 import { createRouter, createWebHistory } from "vue-router"
 import HomeView from "../views/HomeView.vue"
 import WorkView from "../views/WorkView.vue"
-import Deepiew from "../views/DeepView.vue"
+import DeepView from "../views/DeepView.vue"
+import ProjectView from "../views/ProjectView.vue"
+
 
 const router = createRouter({
  history: createWebHistory(import.meta.env.BASE_URL),
@@ -19,8 +21,12 @@ const router = createRouter({
   {
    path: "/deepdive",
    name: "deepdive",
-   component: Deepiew,
+   component: DeepView,
   },
+  { 
+    path: '/project/:slug', 
+    name: 'project',
+    component: ProjectView }
  ],
 })
 
