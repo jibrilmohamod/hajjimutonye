@@ -1,24 +1,24 @@
 <template>
-  <div class="h-screen w-full bg-zinc-900 px-32 border flex flex-col items-center">
+  <div class="h-[120vh] w-full bg-zinc-900 px-32 flex flex-col items-center">
     <!-- title -->
     <TheHeader>MY WORK</TheHeader>
     <!-- works -->
-    <div class="row flex h-[80vh] w-[60vw] content-around justify-center mx-auto border">
+    <div class="row flex h-[100vh] w-[80vw] content-around justify-center mx-auto">
       <div
         class="col-md-5 flex justify-center"
         v-for="project in featuredProjects"
         :key="project.id"
       >
-        <router-link to="" class="h-[30vh]">
+        <router-link to="" class="h-[37vh]">
           <img
             :src="project.attributes.thumbnail.data.attributes.formats.small.url"
             alt=""
-            class="h-full w-full"
+            class="h-full w-full rounded-md"
           />
         </router-link>
       </div>
     </div>
-    <TheButton>SEE MORE</TheButton>
+    <TheButton class="m-auto">SEE MORE</TheButton>
   </div>
 </template>
 

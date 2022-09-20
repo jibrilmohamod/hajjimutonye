@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-zinc-900 h-[150vh] w-full">
+  <div class="bg-zinc-900 h-[150vh] w-full flex flex-col">
     <div class="h-[20vh]">
       <TheHeader class="mb-10">DEEP DIVE</TheHeader>
       <div class="flex justify-center text-yellow-50 text-2xl">
@@ -10,13 +10,14 @@
     </div>
 
     <div class="w-full h-[110vh]">
-      <div
+      <router-link
+        to=""
         v-for="project in featuredProjects"
         :key="project.id"
         class="w-full h-1/2 flex px-20 py-10"
       >
         <div class="w-1/2 text-yellow-50 flex flex-col justify-center gap-8 pr-6">
-          <p class="text-2xl">
+          <p class="text-4xl">
             {{ project.attributes.title }}
           </p>
           <p class="w-5/6">
@@ -30,8 +31,9 @@
             class="w-11/12 h-full rounded-md"
           />
         </div>
-      </div>
+      </router-link>
     </div>
+    <TheButton class="m-auto">SEE MORE</TheButton>
   </div>
 </template>
 
@@ -39,6 +41,7 @@
 import TheHeader from "./ui/TheHeader.vue";
 import { computed, onBeforeMount, ref } from "vue";
 import strapi from "../strapi/strapi";
+import TheButton from "./ui/TheButton.vue";
 
 //  get projects from server
 
