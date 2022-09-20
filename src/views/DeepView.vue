@@ -20,6 +20,12 @@
           <p class="w-5/6">
             {{ project.attributes.description }}
           </p>
+          <router-link
+            :to="{ name: 'project', params: { slug: project.attributes.slug } }"
+            class="text-black"
+          >
+            {{ project.attributes.slug }}
+          </router-link>
         </div>
         <div class="w-1/2 text-white">
           <img
