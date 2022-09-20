@@ -1,16 +1,9 @@
 <template>
-  <router-link to="" class="bg-white rounded px-5 py-3 mb-36 text-xl">
+  <button class="bg-white rounded px-5 py-3 mb-36 text-xl">
     <slot />
-  </router-link>
+  </button>
 </template>
 
-<script setup>
-defineProps({
-  to: {
-    type: String,
-    required: true,
-  },
-});
-</script>
+<script setup></script>
 
 <style lang="scss" scoped></style>
