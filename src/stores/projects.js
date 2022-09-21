@@ -1,5 +1,5 @@
 import { defineStore } from "pinia";
-import { ref } from "vue";
+import { computed, ref } from "vue";
 import strapi from "../strapi/strapi";
 
 export const useProjects = defineStore('projects', () => {
@@ -12,8 +12,13 @@ export const useProjects = defineStore('projects', () => {
 
   }
 
+  const featuredProjects = computed(() => {
+   return projects.value.slice(0, 4)
+  })
+  
+
 getProjects()
 
-return {projects , getProjects}
+return {projects , getProjects, featuredProjects}
 
 })

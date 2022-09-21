@@ -17,7 +17,13 @@
       </div>
       <!-- content -->
       <div class="w-full">
-        <div class="w-1/2 mx-auto"></div>
+        <div class="w-3/4 mx-auto border flex justify-center">
+          <p
+            class="text-xs first-line:text-yellow-600"
+            id="content"
+            v-html="currentProject.attributes.Content"
+          ></p>
+        </div>
       </div>
     </div>
   </div>
@@ -40,4 +46,8 @@ const currentProject = computed(() => {
 });
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+#content h1 {
+  font-size: 1.6rem;
+}
+</style>
