@@ -23,30 +23,24 @@
 </template>
 
 <script setup>
-import { computed, onMounted, ref } from "vue";
-import strapi from "../strapi/strapi";
+import { ref } from "vue";
+
 import "bootstrap/dist/css/bootstrap-grid.min.css";
 import "bootstrap";
 import TheHeader from "./ui/TheHeader.vue";
 import TheButton from "./ui/TheButton.vue";
+import { useProjects } from "../stores/projects";
 
 //  get projects from server
-
+const data = useProjects();
+console.log(data);
 const projects = ref([]);
 
-const getProjects = async () => {
-  await strapi.request("GET", "/projects?populate=deep").then((res) => {
-    projects.value = res.data;
-  });
-};
+projects.value = data.projects;
 
-const featuredProjects = computed(() => {
-  return projects.value.slice(0, 4);
-});
+const featuredProjects = ref([]);
 
-onMounted(() => {
-  getProjects();
-});
+featuredProjects.value = data.featuredProjects;
 </script>
 
 <style lang="scss" scoped></style>
