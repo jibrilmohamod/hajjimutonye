@@ -23,8 +23,8 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
-
+import { computed, onMounted, ref } from "vue";
+import strapi from "../strapi/strapi";
 import "bootstrap/dist/css/bootstrap-grid.min.css";
 import "bootstrap";
 import TheHeader from "./ui/TheHeader.vue";
@@ -36,11 +36,23 @@ const data = useProjects();
 console.log(data);
 const projects = ref([]);
 
-projects.value = data.projects;
+const getProjects = async () => {
+  await strapi.request("GET", "/projects?populate=deep").then((res) => {
+    projects.value = res.data;
+  });
+};
 
-const featuredProjects = ref([]);
+let indexes = [0, 1, 2, 4];
 
-featuredProjects.value = data.featuredProjects;
+const featuredProjects = computed(() => {
+  return projects.value.filter((project, index) => {
+    return indexes.includes(index);
+  });
+});
+
+onMounted(() => {
+  getProjects();
+});
 </script>
 
 <style lang="scss" scoped></style>
