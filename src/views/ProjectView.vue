@@ -45,8 +45,17 @@ const currentProject = computed(() => {
 <style>
 #content p::before {
   color: aqua;
+  border: 1px solid aqua;
+  content: "•";
+  height: 1em;
 }
 #content:first-child {
   color: red;
+}
+#content img {
+  width: 50%;
+  float: left;
+  margin-top: 4px;
+  margin-right: 4px;
 }
 </style>
