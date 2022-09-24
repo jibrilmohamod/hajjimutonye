@@ -62,9 +62,10 @@ const currentProject = computed(() => {
   margin-bottom: 4px;
   font-size: 1.2em;
   letter-spacing: 3px;
+  font-family: "Mali", cursive;
 }
 
-#content img:nth-last-of-type(0) {
+#content p img:nth-of-type(1) {
   margin-bottom: 4px;
   border: 1px solid aqua;
 }
