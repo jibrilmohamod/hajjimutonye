@@ -14,17 +14,19 @@
         class="w-full h-[70vh] flex px-20 py-10 pb-40"
       >
         <div class="w-1/2 text-yellow-50 flex flex-col justify-center gap-8 pr-6">
-          <p class="text-2xl">
+          <p class="text-4xl">
             {{ project.attributes.title }}
           </p>
-          <p class="w-5/6">
+          <p class="w-5/6 text-lg">
             {{ project.attributes.description }}
           </p>
           <router-link
             :to="{ name: 'project', params: { slug: project.attributes.slug } }"
-            class="text-black"
+            class=""
           >
-            {{ project.attributes.slug }}
+            <button class="text-lg bg-yellow-50 text-zinc-900 py-2 px-4 rounded-md">
+              Read more
+            </button>
           </router-link>
         </div>
         <div class="w-1/2 text-white">
