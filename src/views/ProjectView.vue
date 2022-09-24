@@ -8,7 +8,7 @@
         </p>
       </div>
       <!-- cover image -->
-      <div class="w-full h-[70vh]">
+      <div class="w-full h-[70vh] mb-10">
         <img
           :src="currentProject.attributes.images.data[0].attributes.url"
           alt=""
@@ -17,7 +17,7 @@
       </div>
       <!-- content -->
       <div class="w-full">
-        <div class="w-3/4 mx-auto border flex justify-center">
+        <div class="w-[80vw] mx-auto flex justify-center">
           <p class="" id="content" v-html="currentProject.attributes.Content"></p>
         </div>
       </div>
@@ -43,19 +43,29 @@ const currentProject = computed(() => {
 </script>
 
 <style>
-#content p::before {
-  color: aqua;
-  border: 1px solid aqua;
-  content: "•";
-  height: 1em;
+#content p::first-letter {
+  font-size: 1.4em;
 }
-#content:first-child {
-  color: red;
-}
+
 #content img {
-  width: 50%;
+  width: 60%;
+  height: 30em;
+  object-fit: cover;
+  object-position: 20% 20%;
   float: left;
   margin-top: 4px;
-  margin-right: 4px;
+  margin-right: 40px;
+  border-radius: 20px;
+}
+#content p {
+  margin-top: 30px;
+  margin-bottom: 4px;
+  font-size: 1.2em;
+  letter-spacing: 3px;
+}
+
+#content img:nth-last-of-type(0) {
+  margin-bottom: 4px;
+  border: 1px solid aqua;
 }
 </style>
