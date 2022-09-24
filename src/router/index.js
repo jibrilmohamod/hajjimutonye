@@ -3,6 +3,8 @@ import HomeView from "../views/HomeView.vue"
 import WorkView from "../views/WorkView.vue"
 import DeepView from "../views/DeepView.vue"
 import ProjectView from "../views/ProjectView.vue"
+import JournalView from "../views/JournalView.vue"
+
 
 
 const router = createRouter({
@@ -26,7 +28,12 @@ const router = createRouter({
   { 
     path: '/project/:slug', 
     name: 'project',
-    component: ProjectView }
+    component: ProjectView 
+  },
+  { 
+    path: '/journal', 
+    name: 'journal',
+    component: JournalView}
  ],
 })
 
