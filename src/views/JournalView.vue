@@ -7,6 +7,9 @@
         Get more insight on my projects and the inspiration behind them.
       </p>
     </div>
+
+    <!-- content -->
+    <div class="w-full"></div>
   </div>
 </template>
 
