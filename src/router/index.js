@@ -4,6 +4,8 @@ import WorkView from "../views/WorkView.vue"
 import DeepView from "../views/DeepView.vue"
 import ProjectView from "../views/ProjectView.vue"
 import JournalView from "../views/JournalView.vue"
+import ImagesView from "../views/ImagesView.vue"
+
 
 
 
@@ -25,15 +27,21 @@ const router = createRouter({
    name: "deepdive",
    component: DeepView,
   },
-  { 
-    path: '/project/:slug', 
-    name: 'project',
-    component: ProjectView 
+  {
+   path: "/project/:slug",
+   name: "project",
+   component: ProjectView,
   },
-  { 
-    path: '/journal', 
-    name: 'journal',
-    component: JournalView}
+  {
+   path: "/images/:slug",
+   name: "images",
+   component:ImagesView,
+  },
+  {
+   path: "/journal",
+   name: "journal",
+   component: JournalView,
+  },
  ],
 })
 
