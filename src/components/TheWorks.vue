@@ -20,7 +20,7 @@
             :src="project.attributes.thumbnail.data.attributes.formats.small.url"
             alt=""
             class="h-full w-full rounded-md"
-            v-animate-onscroll.repeat="{ down: 'animated fadeIn' }"
+            v-animate-onscroll="{ down: 'animated fadeIn' }"
           />
         </router-link>
       </div>
