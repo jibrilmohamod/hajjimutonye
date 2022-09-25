@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[url('../assets/images/Untitleddesign.svg')] h-[87vh] w-full bg-cover">
+  <div class="h-[87vh] w-full bg-cover" id="hero">
     <TheNav></TheNav>
 
     <div class="h-[84vh] w-full flex justify-center items-end">
@@ -14,4 +14,8 @@
 import TheNav from "./TheNav.vue";
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+#hero {
+  background-image: url("../assets/images/HeroImage.png");
+}
+</style>
