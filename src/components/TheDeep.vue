@@ -34,7 +34,7 @@
       </router-link>
     </div>
     <TheButton class="m-auto"
-      ><router-link to="/deepdive">SEE MORE</router-link></TheButton
+      ><router-link to="/deepdive" class="px-16 py-3">SEE MORE</router-link></TheButton
     >
   </div>
 </template>

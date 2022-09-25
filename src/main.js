@@ -2,10 +2,13 @@ import { createApp } from "vue"
 import { createPinia } from "pinia"
 import { VueShowdownPlugin } from "vue-showdown"
 import iVueFrame from "i-vue-frame"
+import VueAnimateOnScroll from "vue3-animate-onscroll"
+import VAnimateCss from "v-animate-css"
 
 import App from "./App.vue"
 import router from "./router"
 import './assets/tailwind.css'
+
 
 const app = createApp(App)
 
@@ -20,6 +23,9 @@ app.use(VueShowdownPlugin, {
  },
 })
 app.use(iVueFrame)
+app.use(VueAnimateOnScroll)
+app.use(VAnimateCss)
+
 
 
 app.mount("#app")

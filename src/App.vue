@@ -25,7 +25,7 @@ import TheFooter from "./components/TheFooter.vue";
 }
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.6s ease;
+  transition: opacity 1.2s ease;
 }
 
 .fade-enter-from,

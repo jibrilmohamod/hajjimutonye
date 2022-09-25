@@ -1,5 +1,5 @@
 <template>
-  <button class="bg-white rounded px-5 py-3 mb-36 text-xl">
+  <button class="bg-white rounded w-60 h-16 mb-36 text-xl">
     <slot />
   </button>
 </template>

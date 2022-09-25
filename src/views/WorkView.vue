@@ -4,7 +4,7 @@
     <div class="-red-600 py-8">
       <TheHeader>MY WORK</TheHeader>
       <div v-for="project in projects" :key="project.id" class="w-full">
-        <div class="w-full bg-green-600 h-[70vh] my-8">
+        <div class="w-full bg-green-600 h-[70vh] my-14">
           <router-link
             :to="{ name: 'images', params: { slug: project.attributes.slug } }"
             class="w-full -red-500"
@@ -12,7 +12,7 @@
             <img
               :src="project.attributes.cover.data.attributes.url"
               alt=""
-              class="w-full h-full object-cover"
+              class="w-full h-full object-cover hover:transform hover:scale-110 transition-all duration-500"
             />
           </router-link>
         </div>

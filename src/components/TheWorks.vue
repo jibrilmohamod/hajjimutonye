@@ -8,6 +8,7 @@
         class="col-md-5 flex justify-center"
         v-for="project in featuredProjects"
         :key="project.id"
+        v-animate-css="'fadeIn'"
       >
         <router-link
           :to="{ name: 'images', params: { slug: project.attributes.slug } }"
@@ -17,16 +18,21 @@
             :src="project.attributes.thumbnail.data.attributes.formats.small.url"
             alt=""
             class="h-full w-full rounded-md"
+            v-animate-onscroll="{ down: 'animated slideInLeft' }"
           />
         </router-link>
       </div>
     </div>
-    <TheButton class="m-auto"><router-link to="/works">SEE MORE</router-link></TheButton>
+    <TheButton class="m-auto"
+      ><router-link to="/works" class="px-16 py-3 border"
+        >SEE MORE</router-link
+      ></TheButton
+    >
   </div>
 </template>
 
 <script setup>
-import { computed, onMounted, ref } from "vue";
+import { computed, onBeforeMount, ref } from "vue";
 import strapi from "../strapi/strapi";
 import "bootstrap/dist/css/bootstrap-grid.min.css";
 import "bootstrap";
@@ -53,9 +59,9 @@ const featuredProjects = computed(() => {
   });
 });
 
-onMounted(() => {
+onBeforeMount(() => {
   getProjects();
 });
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped></style>
