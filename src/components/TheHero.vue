@@ -16,6 +16,6 @@ import TheNav from "./TheNav.vue";
 
 <style scoped>
 #hero {
-  background-image: url("../assets/images/HeroImage.png");
+  background-image: url("../assets/images/HeroImage.webp");
 }
 </style>
