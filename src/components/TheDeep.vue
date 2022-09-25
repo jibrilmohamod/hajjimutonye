@@ -11,7 +11,7 @@
 
     <div class="w-full h-[110vh]">
       <router-link
-        to=""
+        :to="{ name: 'project', params: { slug: project.attributes.slug } }"
         v-for="project in featuredProjects"
         :key="project.id"
         class="w-full h-1/2 flex px-20 py-10"
@@ -33,7 +33,9 @@
         </div>
       </router-link>
     </div>
-    <TheButton class="m-auto">SEE MORE</TheButton>
+    <TheButton class="m-auto"
+      ><router-link to="/deepdive">SEE MORE</router-link></TheButton
+    >
   </div>
 </template>
 

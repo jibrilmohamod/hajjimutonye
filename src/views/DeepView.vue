@@ -25,7 +25,7 @@
             class=""
           >
             <button class="text-lg bg-yellow-50 text-zinc-900 py-2 px-4 rounded-md">
-              Read more
+              READ MORE
             </button>
           </router-link>
         </div>

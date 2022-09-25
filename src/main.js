@@ -1,7 +1,7 @@
 import { createApp } from "vue"
 import { createPinia } from "pinia"
 import { VueShowdownPlugin } from "vue-showdown"
-import YouTube from "vue3-youtube"
+
 
 import App from "./App.vue"
 import router from "./router"
@@ -19,6 +19,6 @@ app.use(VueShowdownPlugin, {
   emoji: false,
  },
 })
-app.component('YouTube', YouTube)
+
 
 app.mount("#app")

@@ -25,13 +25,15 @@
           </router-link>
         </div>
         <div class="w-1/2 h-full text-white border">
-          <YouTube
-            src="video.attributes.link"
-            @ready="onReady"
-            ref="youtube"
-            width="100%"
-            class="border border-green-500"
-          />
+          <!-- <vue-iframe
+            :src="src"
+            allow="camera *; geolocation *; microphone *; autoplay *"
+            frame-id="my-ifram"
+            @load="onLoad"
+            name="my-frame"
+            width="150px"
+            height="200px"
+          /> -->
         </div>
       </div>
     </div>
