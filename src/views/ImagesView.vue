@@ -43,4 +43,19 @@ const currentProject = computed(() => {
 });
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@media screen and (max-width: 40em) {
+  p {
+    font-size: 16px;
+    width: 100%;
+    padding-left: 7px;
+    margin: auto;
+  }
+  div {
+    width: 100%;
+  }
+  h1 {
+    font-size: 30px;
+  }
+}
+</style>
