@@ -2,17 +2,21 @@
 import { RouterView } from "vue-router";
 import TheName from "./components/TheName.vue";
 import TheFooter from "./components/TheFooter.vue";
-//  import TheNav from "./components/TheNav.vue"
 </script>
 
 <template>
-  <main class="font-sans">
+  <main class="">
     <header>
       <TheName></TheName>
-      <!-- <TheNav></TheNav> -->
     </header>
   </main>
 
   <RouterView />
   <TheFooter />
 </template>
+
+<style>
+#app {
+  font-family: "Cartograph CF", sans-serif;
+}
+</style>
