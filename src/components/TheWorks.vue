@@ -9,7 +9,10 @@
         v-for="project in featuredProjects"
         :key="project.id"
       >
-        <router-link to="" class="h-[37vh]">
+        <router-link
+          :to="{ name: 'images', params: { slug: project.attributes.slug } }"
+          class="h-[37vh]"
+        >
           <img
             :src="project.attributes.thumbnail.data.attributes.formats.small.url"
             alt=""
@@ -18,7 +21,7 @@
         </router-link>
       </div>
     </div>
-    <TheButton class="m-auto">SEE MORE</TheButton>
+    <TheButton class="m-auto"><router-link to="/works">SEE MORE</router-link></TheButton>
   </div>
 </template>
 
