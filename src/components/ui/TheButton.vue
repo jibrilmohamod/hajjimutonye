@@ -6,4 +6,13 @@
 
 <script setup></script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+@media screen and (max-width: 40em) {
+  button {
+    margin: auto;
+    font-size: 15px;
+    height: 6vh;
+    width: 30vw;
+  }
+}
+</style>

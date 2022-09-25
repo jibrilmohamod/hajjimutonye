@@ -12,4 +12,10 @@
 import { RouterLink } from "vue-router";
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+@media screen and (max-width: 40em) {
+  nav {
+    font-size: 10px;
+  }
+}
+</style>

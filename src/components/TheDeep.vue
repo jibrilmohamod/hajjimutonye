@@ -1,9 +1,9 @@
 <template>
-  <div class="bg-zinc-900 h-[150vh] w-full flex flex-col">
+  <div class="bg-zinc-900 h-[150vh] w-full flex flex-col" id="t">
     <div class="h-[20vh]">
       <TheHeader class="mb-10">DEEP DIVE</TheHeader>
       <div class="flex justify-center text-yellow-50 text-2xl">
-        <p class="w-2/6 tracking-wide text-center">
+        <p class="w-2/6 tracking-wide text-center" id="description">
           Get more insight on my projects and the inspiration behind them.
         </p>
       </div>
@@ -15,12 +15,13 @@
         v-for="project in featuredProjects"
         :key="project.id"
         class="w-full h-1/2 flex px-20 py-10"
+        id="deep"
       >
-        <div class="w-1/2 text-yellow-50 flex flex-col justify-center gap-8 pr-6">
-          <p class="text-4xl">
+        <div class="w-1/2 text-yellow-50 flex flex-col justify-center gap-8 pr-6" id="y">
+          <p class="text-4xl" id="title">
             {{ project.attributes.title }}
           </p>
-          <p class="w-5/6">
+          <p class="w-5/6" id="descript">
             {{ project.attributes.description }}
           </p>
         </div>
@@ -63,11 +64,65 @@ const featuredProjects = computed(() => {
   });
 });
 
-console.log(projects);
-
 onBeforeMount(() => {
   getProjects();
 });
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+@media only screen and (max-width: 40em) {
+  div {
+    width: 100vw;
+    font-size: 12px;
+    height: max-content;
+  }
+  p {
+    width: 50%;
+  }
+  #description {
+    width: 80%;
+  }
+  #deep {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    margin: unset;
+    padding: 0;
+    margin: 0;
+    height: max-content;
+  }
+  #title {
+    font-size: 1.2rem;
+
+    text-align: center;
+    width: 100%;
+  }
+  #descript {
+    margin-top: -1.6rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.8rem;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  #y {
+    width: 100%;
+    height: max-content;
+    padding: 0;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  .mb-10 {
+    margin-bottom: 0;
+  }
+  .px-16 {
+    padding: 1px;
+    margin: 0;
+    padding-left: 0;
+  }
+}
+</style>

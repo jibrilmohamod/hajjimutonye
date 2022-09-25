@@ -14,8 +14,13 @@
 import TheNav from "./TheNav.vue";
 </script>
 
-<style scoped>
+<style>
 #hero {
   background-image: url("../assets/images/HeroImage.webp");
+}
+@media only screen and (max-width: 40em) {
+  #hero {
+    width: 100vw;
+  }
 }
 </style>

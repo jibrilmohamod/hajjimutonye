@@ -6,4 +6,10 @@
 
 <script setup></script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+@media screen and (max-width: 40em) {
+  p {
+    font-size: 30px;
+  }
+}
+</style>

@@ -5,7 +5,7 @@ import TheFooter from "./components/TheFooter.vue";
 </script>
 
 <template>
-  <main class="">
+  <main class="sm:border border-double border-green-500">
     <header>
       <TheName></TheName>
     </header>
@@ -31,5 +31,9 @@ import TheFooter from "./components/TheFooter.vue";
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
+}
+@media only screen and (max-width: 40em) {
+  #app {
+  }
 }
 </style>
