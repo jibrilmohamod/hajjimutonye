@@ -53,9 +53,10 @@ const currentProject = computed(() => {
   object-fit: cover;
   object-position: 20% 20%;
   float: left;
-  margin-top: 4px;
+  margin-top: 20px;
   margin-right: 40px;
   border-radius: 20px;
+  margin-bottom: 20px;
 }
 #content p {
   margin-top: 30px;
@@ -64,10 +65,5 @@ const currentProject = computed(() => {
   letter-spacing: 3px;
   font-family: "Mali", cursive;
   font-weight: 300;
-}
-
-#content p img:nth-of-type(1) {
-  margin-bottom: 4px;
-  border: 1px solid aqua;
 }
 </style>
