@@ -1,7 +1,7 @@
 import { createApp } from "vue"
 import { createPinia } from "pinia"
 import { VueShowdownPlugin } from "vue-showdown"
-
+import iVueFrame from "i-vue-frame"
 
 import App from "./App.vue"
 import router from "./router"
@@ -19,6 +19,7 @@ app.use(VueShowdownPlugin, {
   emoji: false,
  },
 })
+app.use(iVueFrame)
 
 
 app.mount("#app")

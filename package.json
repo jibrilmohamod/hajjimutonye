@@ -24,6 +24,7 @@
     "@vitejs/plugin-vue": "^3.0.1",
     "eslint": "^8.21.0",
     "eslint-plugin-vue": "^9.3.0",
+    "sass": "^1.55.0",
     "vite": "^3.0.4",
     "vue-cli-plugin-tailwind": "~3.0.0"
   }

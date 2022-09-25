@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-zinc-900 text-white">
+  <div class="bg-zinc-900 text-white pb-16">
     <TheNav />
 
     <!-- images and description -->

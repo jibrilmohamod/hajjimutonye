@@ -13,7 +13,7 @@
       <div
         v-for="(video, index) in videos"
         :key="index"
-        class="w-full h-[70vh] flex px-20 py-10 pb-40 border"
+        class="w-[80vw] h-[70vh] flex px-20 py-10 pb-40 m-auto"
       >
         <div class="w-1/2 text-yellow-50 flex flex-col justify-center gap-8 pr-6">
           <p class="text-4xl">{{ video.attributes.title }}</p>
@@ -24,7 +24,9 @@
             </button>
           </router-link>
         </div>
-        <div class="w-1/2 h-full text-white border"></div>
+        <div class="w-1/2 h-full text-white">
+          <i-vue-frame :src="video.attributes.link" class="rounded-3xl" />
+        </div>
       </div>
     </div>
   </div>
