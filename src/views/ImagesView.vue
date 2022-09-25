@@ -9,7 +9,7 @@
         {{ currentProject.attributes.title }}
       </h1>
       <!-- project description -->
-      <p class="w-1/2 m-auto text-2xl text-center pt-10">
+      <p class="w-1/2 m-auto text-2xl text-left pt-10">
         {{ currentProject.attributes.description }}
       </p>
       <!-- project images -->
