@@ -17,7 +17,7 @@
       </div>
       <!-- content -->
       <div class="w-full">
-        <div class="w-[80vw] mx-auto flex justify-center">
+        <div class="w-[80vw] mx-auto flex justify-center pb-10">
           <p class="" id="content" v-html="currentProject.attributes.Content"></p>
         </div>
       </div>
@@ -65,5 +65,12 @@ const currentProject = computed(() => {
   letter-spacing: 3px;
   font-family: "Mali", cursive;
   font-weight: 300;
+}
+#content strong {
+  font-size: 1.3em;
+  font-family: "Mali", cursive;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 4px;
 }
 </style>
