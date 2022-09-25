@@ -5,7 +5,10 @@
       <TheHeader>MY WORK</TheHeader>
       <div v-for="project in projects" :key="project.id" class="w-full">
         <div class="w-full bg-green-600 h-[70vh] my-8">
-          <router-link to="" class="w-full -red-500">
+          <router-link
+            :to="{ name: 'images', params: { slug: project.attributes.slug } }"
+            class="w-full -red-500"
+          >
             <img
               :src="project.attributes.cover.data.attributes.url"
               alt=""
@@ -13,6 +16,7 @@
             />
           </router-link>
         </div>
+        <router-view></router-view>
       </div>
     </div>
   </div>
