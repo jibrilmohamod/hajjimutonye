@@ -24,17 +24,7 @@
             </button>
           </router-link>
         </div>
-        <div class="w-1/2 h-full text-white border">
-          <!-- <vue-iframe
-            :src="src"
-            allow="camera *; geolocation *; microphone *; autoplay *"
-            frame-id="my-ifram"
-            @load="onLoad"
-            name="my-frame"
-            width="150px"
-            height="200px"
-          /> -->
-        </div>
+        <div class="w-1/2 h-full text-white border"></div>
       </div>
     </div>
   </div>
