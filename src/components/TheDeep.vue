@@ -75,7 +75,6 @@ onBeforeMount(() => {
     width: 99vw;
     font-size: 12px;
     height: max-content;
-    border: 1px solid green;
   }
   p {
     width: 50%;

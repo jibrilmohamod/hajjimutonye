@@ -21,6 +21,8 @@ import TheNav from "./TheNav.vue";
 @media only screen and (max-width: 40em) {
   #hero {
     width: 100vw;
+    background: url("../assets/images/PrivateDreams1x1.png") no-repeat center;
+    background-size: cover;
   }
 }
 </style>
