@@ -25,7 +25,7 @@
             </button>
           </router-link>
         </div>
-        <div class="w-1/2 h-full text-white">
+        <div class="w-1/2 h-full text-white f">
           <i-vue-frame :src="video.attributes.link" class="rounded-3xl" />
         </div>
       </div>
@@ -124,6 +124,10 @@ onBeforeMount(() => {
   }
   .pr-6 {
     padding-right: 0;
+  }
+  .f {
+    width: 100%;
+    height: 40vh;
   }
 }
 </style>
