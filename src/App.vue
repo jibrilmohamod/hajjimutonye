@@ -5,7 +5,7 @@ import TheFooter from "./components/TheFooter.vue";
 </script>
 
 <template>
-  <main class="sm:border border-double border-green-500">
+  <main class="">
     <header>
       <TheName></TheName>
     </header>
