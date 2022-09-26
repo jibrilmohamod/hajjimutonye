@@ -17,7 +17,7 @@
       </div>
       <!-- content -->
       <div class="w-full">
-        <div class="w-[80vw] mx-auto flex justify-center pb-10">
+        <div class="w-[80vw] mx-auto flex justify-center pb-10" id="d">
           <p class="" id="content" v-html="currentProject.attributes.Content"></p>
         </div>
       </div>
@@ -72,5 +72,38 @@ const currentProject = computed(() => {
   font-weight: 600;
   margin-top: 30px;
   margin-bottom: 4px;
+}
+@media screen and (max-width: 40em) {
+  #content img {
+    width: 100%;
+    height: 20em;
+    object-fit: cover;
+    object-position: 20% 20%;
+    float: left;
+    margin-top: 20px;
+    margin-right: 40px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+  #content p {
+    margin-top: 30px;
+    margin-bottom: 4px;
+    font-size: 0.8em;
+    letter-spacing: 3px;
+    font-family: "Mali", cursive;
+    font-weight: 300;
+  }
+  #content strong {
+    font-size: 1.3em;
+    font-family: "Mali", cursive;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 4px;
+  }
+  #d {
+    width: 100vw;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 }
 </style>
