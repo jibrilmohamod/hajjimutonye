@@ -1,7 +1,7 @@
 <template>
   <div class="bg-zinc-900 h-[150vh] w-full flex flex-col" id="t">
     <div class="h-[20vh]">
-      <TheHeader class="mb-10">DEEP DIVE</TheHeader>
+      <TheHeader class="mb-10"><h2>DEEP DIVE</h2></TheHeader>
       <div class="flex justify-center text-yellow-50 text-2xl">
         <p class="w-2/6 tracking-wide text-center" id="description">
           Get more insight on my projects and the inspiration behind them.
@@ -18,9 +18,9 @@
         id="deep"
       >
         <div class="w-1/2 text-yellow-50 flex flex-col justify-center gap-8 pr-6" id="y">
-          <p class="text-4xl" id="title">
+          <h2 class="text-4xl" id="title">
             {{ project.attributes.title }}
-          </p>
+          </h2>
           <p class="w-5/6" id="descript">
             {{ project.attributes.description }}
           </p>

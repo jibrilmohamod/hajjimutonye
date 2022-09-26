@@ -2,7 +2,7 @@
   <div class="h-screen bg-zinc-900 w-full px-32 pt-20" id="prof">
     <!-- name and img -->
 
-    <p class="text-5xl text-white text-center">WHO IS HAJI MUTONYE?</p>
+    <h2 class="text-5xl text-white text-center">WHO IS HAJI MUTONYE?</h2>
     <div class="h-[40vh] w-[20vw] bg-slate-400 rounded-full mx-auto my-8" id="img">
       <img
         src="../assets/images/profile.jpg"
@@ -36,7 +36,7 @@ import TheButton from "./ui/TheButton.vue";
 
 <style scoped>
 @media screen and (max-width: 40em) {
-  p {
+  h2 {
     font-size: 1.4rem;
   }
   #prof {

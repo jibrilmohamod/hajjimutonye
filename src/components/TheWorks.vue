@@ -1,7 +1,7 @@
 <template>
   <div class="h-[120vh] w-full bg-zinc-900 px-32 flex flex-col items-center" id="t">
     <!-- title -->
-    <TheHeader class="hr">MY WORK</TheHeader>
+    <TheHeader class="hr"><h2>MY WORK</h2></TheHeader>
     <!-- works -->
     <div class="row flex h-[100vh] w-[80vw] content-around justify-center mx-auto" id="u">
       <div
