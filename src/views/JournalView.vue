@@ -1,9 +1,9 @@
 <template>
-  <div class="bg-zinc-900">
+  <div class="bg-zinc-900" id="t">
     <TheNav />
     <div class="w-full pt-10">
       <TheHeader>JOURNAL</TheHeader>
-      <p class="text-2xl text-yellow-50 text-center pt-3">
+      <p class="text-2xl text-yellow-50 text-center pt-3" id="description">
         Get more insight on my projects and the inspiration behind them.
       </p>
     </div>
@@ -14,11 +14,12 @@
         v-for="(video, index) in videos"
         :key="index"
         class="w-[80vw] h-[70vh] flex px-20 py-10 pb-40 m-auto"
+        id="deep"
       >
         <div class="w-1/2 text-yellow-50 flex flex-col justify-center gap-8 pr-6">
-          <p class="text-4xl">{{ video.attributes.title }}</p>
-          <p class="w-5/6 text-lg">{{ video.attributes.description }}</p>
-          <router-link to="" class="">
+          <p class="text-4xl" id="title">{{ video.attributes.title }}</p>
+          <p class="w-5/6 text-lg" id="descript">{{ video.attributes.description }}</p>
+          <router-link to="" class="aa">
             <button class="text-lg bg-yellow-50 text-zinc-900 py-2 px-4 rounded-md">
               WATCH VIDEO
             </button>
@@ -52,4 +53,77 @@ onBeforeMount(() => {
 });
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@media only screen and (max-width: 40em) {
+  div {
+    width: 99vw;
+    font-size: 12px;
+    height: max-content;
+  }
+  p {
+    width: 50%;
+  }
+  #description {
+    width: 80%;
+
+    margin: auto;
+    padding-bottom: 0;
+    font-size: 18px;
+  }
+  #deep {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    margin: unset;
+    padding: 0;
+    margin: 0;
+    height: max-content;
+    gap: unset;
+  }
+  #title {
+    font-size: 1.4rem;
+    text-align: center;
+    width: 100%;
+  }
+  #descript {
+    margin-top: -1.6rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  #y {
+    width: 100%;
+    height: max-content;
+    padding: 0;
+  }
+  img {
+    width: 90vw;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mb-10 {
+    margin-bottom: 0;
+  }
+  .px-16 {
+    padding: 1px;
+    margin: 0;
+    padding-left: 0;
+  }
+  .aa {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+  .pt-20 {
+    padding-top: 5px;
+  }
+  .pr-6 {
+    padding-right: 0;
+  }
+}
+</style>
