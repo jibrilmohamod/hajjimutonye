@@ -1,9 +1,9 @@
 <template>
   <div class="bg-zinc-900 w-full text-yellow-50">
     <!-- contact details -->
-    <div class="flex text-xl px-16 gap-10">
+    <div class="flex text-xl px-16 gap-10 border">
       <h1>CONTACT ME</h1>
-      <ul>
+      <ul class="border flex">
         <li>
           <a href=""> <i class="pr-5 fas fa-envelope"></i>Info@hajimutonye.com </a>
         </li>

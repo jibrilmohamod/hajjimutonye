@@ -3,7 +3,7 @@
     <!-- name and img -->
 
     <p class="text-5xl text-white text-center">WHO IS HAJI MUTONYE?</p>
-    <div class="h-96 w-96 bg-slate-400 rounded-full mx-auto my-8" id="img">
+    <div class="h-[40vh] w-[20vw] bg-slate-400 rounded-full mx-auto my-8" id="img">
       <img
         src="../assets/images/profile.jpg"
         alt=""
