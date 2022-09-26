@@ -7,7 +7,11 @@ import { computed, reactive } from "vue";
 
 const siteData = reactive({
   title: `Haji Mutonye`,
-  description: `Haji Mutonye is a Film-maker and concept creator from Nairobi,Kenya`,
+  description: `HAJI MUTONYE is a new and upcoming cinematographer who got his first cinematography experience on a short film titled SOFT-BOOT directed by John U. The short film was screened at the 2013 Cannes Film Festival. He then served as Associate Cinematographer on`,
+  keywords: `HAJJIMUTONYE, HAJIMUTONYE, PEKAT DRESS CREATIVE, HAJI, PAREXELLENCE,TRANS ATLANTIC`,
+  author: `JibrilMohamod`,
+  robots: `index, follow`,
+  language: `English`,
 });
 
 useHead({
@@ -16,6 +20,22 @@ useHead({
     {
       name: `description`,
       content: computed(() => siteData.description),
+    },
+    {
+      name: `keywords`,
+      content: computed(() => siteData.keywords),
+    },
+    {
+      name: `author`,
+      content: computed(() => siteData.author),
+    },
+    {
+      name: `robots`,
+      content: computed(() => siteData.robots),
+    },
+    {
+      name: `language`,
+      content: computed(() => siteData.language),
     },
   ],
 });
