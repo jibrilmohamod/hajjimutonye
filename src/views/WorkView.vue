@@ -43,4 +43,15 @@ onBeforeMount(() => {
 });
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@media screen and (max-width: 40em) {
+  .w-full {
+    width: 100vw;
+  }
+  img {
+    width: 90vw;
+    object-fit: cover;
+    object-position: 30% 0;
+  }
+}
+</style>
