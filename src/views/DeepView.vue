@@ -75,7 +75,7 @@ onBeforeMount(() => {
   }
   #description {
     width: 80%;
-    border: 1px solid red;
+
     margin: auto;
     padding-bottom: 0;
     font-size: 18px;
@@ -89,10 +89,11 @@ onBeforeMount(() => {
     padding: 0;
     margin: 0;
     height: max-content;
+    gap: unset;
   }
   #title {
     font-size: 1.2rem;
-    border: 1px solid red;
+
     text-align: center;
     width: 100%;
   }
@@ -129,9 +130,8 @@ onBeforeMount(() => {
     margin-right: auto;
     margin-bottom: 10px;
   }
-  .gap-8 {
-    margin-top: -53px;
-    border: 1px solid red;
+  .pt-20 {
+    padding-top: 5px;
   }
 }
 </style>
