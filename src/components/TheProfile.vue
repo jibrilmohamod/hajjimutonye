@@ -25,7 +25,9 @@
 
     <!-- call to action -->
     <div class="w-full flex justify-center items-end mt-10">
-      <TheButton class="ss"> GET IN TOUCH </TheButton>
+      <TheButton class="ss"
+        ><a href="mailto:haji@hajimutonye.com">GET IN TOUCH</a>
+      </TheButton>
     </div>
   </div>
 </template>
