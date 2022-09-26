@@ -25,7 +25,7 @@
 
     <!-- call to action -->
     <div class="w-full flex justify-center items-end mt-10">
-      <TheButton> GET IN TOUCH </TheButton>
+      <TheButton class="ss"> GET IN TOUCH </TheButton>
     </div>
   </div>
 </template>
@@ -53,6 +53,9 @@ import TheButton from "./ui/TheButton.vue";
     padding: unset;
     font-size: 0.7rem;
     text-align: center;
+  }
+  .ss {
+    font-size: 0.7rem;
   }
 }
 </style>
