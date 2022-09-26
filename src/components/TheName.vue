@@ -1,7 +1,9 @@
 <template>
   <div class="">
     <router-link to="/" class="l">
-      <img src="../assets/images/You.svg" alt="" class="w-full" />
+      <h1>
+        <img src="../assets/images/You.svg" alt="" class="w-full" />
+      </h1>
     </router-link>
   </div>
 </template>
