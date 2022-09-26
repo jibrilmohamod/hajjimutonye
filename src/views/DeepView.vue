@@ -92,8 +92,7 @@ onBeforeMount(() => {
     gap: unset;
   }
   #title {
-    font-size: 1.2rem;
-
+    font-size: 1.4rem;
     text-align: center;
     width: 100%;
   }
@@ -132,6 +131,9 @@ onBeforeMount(() => {
   }
   .pt-20 {
     padding-top: 5px;
+  }
+  .pr-6 {
+    padding-right: 0;
   }
 }
 </style>
