@@ -36,4 +36,7 @@ import TheFooter from "./components/TheFooter.vue";
   #app {
   }
 }
+div {
+  border: 1px solid red;
+}
 </style>
