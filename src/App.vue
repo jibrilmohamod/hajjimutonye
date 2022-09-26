@@ -32,11 +32,4 @@ import TheFooter from "./components/TheFooter.vue";
 .fade-leave-to {
   opacity: 0;
 }
-@media only screen and (max-width: 40em) {
-  #app {
-  }
-}
-div {
-  border: 1px solid red;
-}
 </style>
