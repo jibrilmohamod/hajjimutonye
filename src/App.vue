@@ -38,7 +38,8 @@ useHead({
 
 <style>
 #app {
-  font-family: "Cartograph CF", sans-serif;
+  font-family: "Source Code Pro", sans-serif;
+  font-weight: 500;
 }
 .fade-enter-active,
 .fade-leave-active {

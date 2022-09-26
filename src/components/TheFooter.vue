@@ -3,20 +3,7 @@
     <!-- contact details -->
     <div class="flex text-xl px-16 gap-10 border">
       <h1>CONTACT ME</h1>
-      <ul class="border flex">
-        <li>
-          <a href=""> <i class="pr-5 fas fa-envelope"></i>Info@hajimutonye.com </a>
-        </li>
-        <li>
-          <a href=""><i class="pr-5 fab fa-youtube"></i>HAJIMUTONYE</a>
-        </li>
-        <li>
-          <a href=""><i class="pr-5 fab fa-instagram"></i>HAJIMUTONYE</a>
-        </li>
-        <li>
-          <a href=""><i class="pr-5 fab fa-twitter"></i>HAJIMUTONYE</a>
-        </li>
-      </ul>
+      <ul class="border flex"></ul>
     </div>
     <router-link to="/">
       <img src="../assets/images/footers.svg" alt="" class="bg-zinc-900 w-screen" />
