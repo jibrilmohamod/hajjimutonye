@@ -3,7 +3,7 @@
     <TheNav></TheNav>
 
     <div class="h-[84vh] w-full flex justify-center items-end">
-      <router-link to="" class="bg-white rounded px-5 py-3 mb-36 text-xl"
+      <router-link to="/deepdive" class="bg-white rounded px-5 py-3 mb-36 text-xl"
         >LEARN MORE
       </router-link>
     </div>
