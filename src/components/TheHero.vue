@@ -29,7 +29,7 @@ import TheNav from "./TheNav.vue";
   }
   #d55 {
     padding: 0;
-    font-size: 18px;
+    font-size: 12px;
 
     margin: 0;
     width: 40vw;
