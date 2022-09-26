@@ -84,7 +84,7 @@ onBeforeMount(() => {
   }
 
   #u {
-    width: 100vw;
+    width: 90vw;
     padding: 0;
     margin: 0;
     height: max-content;

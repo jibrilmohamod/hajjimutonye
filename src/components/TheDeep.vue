@@ -72,9 +72,10 @@ onBeforeMount(() => {
 <style scoped>
 @media only screen and (max-width: 40em) {
   div {
-    width: 100vw;
+    width: 99vw;
     font-size: 12px;
     height: max-content;
+    border: 1px solid green;
   }
   p {
     width: 50%;
@@ -113,8 +114,10 @@ onBeforeMount(() => {
     padding: 0;
   }
   img {
-    width: 100%;
+    width: 90vw;
     height: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .mb-10 {
     margin-bottom: 0;
