@@ -5,18 +5,24 @@
       <h1>CONTACT ME</h1>
       <ul class="flex w-2/4 justify-center gap-10 text-4xl">
         <li>
-          <a href="mailto:haji@hajimutonye.com" class="hover:text-red-600"
+          <a href="mailto:haji@hajimutonye.com" class="hover:text-red-600" target="_blank"
             ><i class="fas fa-envelope"></i
           ></a>
         </li>
         <li>
-          <a href="https://www.instagram.com/hajimutonye/" class="hover:text-pink-700"
+          <a
+            href="https://www.instagram.com/hajimutonye/"
+            class="hover:text-pink-700"
+            target="_blank"
             ><i class="fab fa-instagram"></i
           ></a>
         </li>
         <li>
           <!-- twitter -->
-          <a href="https://twitter.com/hajjimutonye" class="hover:text-cyan-500"
+          <a
+            href="https://twitter.com/hajjimutonye"
+            class="hover:text-cyan-500"
+            target="_blank"
             ><i class="fab fa-twitter"></i
           ></a>
         </li>
