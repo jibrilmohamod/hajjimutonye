@@ -7,7 +7,11 @@ import { computed, reactive } from "vue";
 
 const siteData = reactive({
   title: `Haji Mutonye`,
-  description: `HAJI MUTONYE is a new and upcoming cinematographer who got his first cinematography experience on a short film titled SOFT-BOOT directed by John U. The short film was screened at the 2013 Cannes Film Festival. He then served as Associate Cinematographer on`,
+  description: `Haji Mutonye is a writer based in Nairobi, Kenya. Over the years, he has
+        collaborated with a number of photographers to add a special touch of story to
+        their visuals.What started out as a journey to tell stories by any medium
+        necessary, has in recent years irresistibly drifted towards film, and there seems
+        to be no altering to that.`,
   keywords: `HAJJIMUTONYE, HAJIMUTONYE, PEKAT DRESS CREATIVE, HAJI, PAREXELLENCE,TRANS ATLANTIC`,
   author: `JibrilMohamod`,
   robots: `index, follow`,
