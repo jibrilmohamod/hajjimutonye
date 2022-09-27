@@ -47,6 +47,33 @@ import { onBeforeMount, ref } from "vue";
 import strapi from "../strapi/strapi";
 import TheHeader from "../components/ui/TheHeader.vue";
 import TheNav from "../components/TheNav.vue";
+import { useHead } from "@vueuse/head";
+
+useHead({
+  title: "Haji Mutonye/Deep Dive",
+  meta: [
+    {
+      name: "description",
+      content: "Get more insight on my projects and the inspiration behind them.",
+    },
+    {
+      name: "keywords",
+      content: "projects, deep dive, inspiration",
+    },
+    {
+      name: "author",
+      content: "Haji Mutonye",
+    },
+    {
+      name: "robots",
+      content: "index, follow",
+    },
+    {
+      name: "googlebot",
+      content: "index, follow",
+    },
+  ],
+});
 
 //  get projects from server
 
