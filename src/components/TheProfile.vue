@@ -15,11 +15,11 @@
 
     <div class="w-full text-yellow-50 text-xl mt-9 mx-auto">
       <p id="about" class="w-1/2 m-auto">
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-        vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-        amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.
+        Haji Mutonye is a writer based in Nairobi, Kenya. Over the years, he has
+        collaborated with a number of photographers to add a special touch of story to
+        their visuals.What started out as a journey to tell stories by any medium
+        necessary, has in recent years irresistibly drifted towards film, and there seems
+        to be no altering to that.
       </p>
     </div>
 
