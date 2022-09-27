@@ -60,6 +60,7 @@ useHead({
 #app {
   font-family: "Source Code Pro", sans-serif;
   font-weight: 500;
+  scroll-behavior: smooth;
 }
 .fade-enter-active,
 .fade-leave-active {
