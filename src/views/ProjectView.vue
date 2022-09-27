@@ -29,9 +29,11 @@
 import { computed } from "vue";
 import { useRoute } from "vue-router";
 import TheNav from "../components/TheNav.vue";
+import { useProjects } from "../stores/projects";
+
+import { useHead } from "@vueuse/head";
 
 //  get projects from server
-import { useProjects } from "../stores/projects";
 const data = useProjects();
 
 // get project by slug
@@ -39,6 +41,26 @@ const route = useRoute();
 const currentSlug = route.params.slug;
 const currentProject = computed(() => {
   return data.projects.find((project) => project.attributes.slug === currentSlug);
+});
+
+// meta data
+
+useHead({
+  title: `Haji Mutonye/${currentProject.value.attributes.title}`,
+  meta: [
+    {
+      name: "description",
+      content: currentProject.value.attributes.description,
+    },
+    {
+      name: "keywords",
+      content: "projects, deep dive, inspiration",
+    },
+    {
+      name: "author",
+      content: "Haji Mutonye",
+    },
+  ],
 });
 </script>
 
