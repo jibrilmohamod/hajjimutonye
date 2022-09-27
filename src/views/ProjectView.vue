@@ -3,9 +3,9 @@
     <TheNav />
     <div class="w-full">
       <div class="">
-        <p class="text-center text-4xl m-4">
+        <h2 class="text-center text-4xl m-4">
           {{ currentProject.attributes.title }}
-        </p>
+        </h2>
       </div>
       <!-- cover image -->
       <div class="w-full h-[70vh] mb-10">
