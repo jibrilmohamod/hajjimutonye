@@ -11,14 +11,16 @@
     <!-- content -->
     <div class="w-full pt-20">
       <div
-        v-for="(video, index) in videos"
+        v-for="(video, index) in videos.slice().reverse()"
         :key="index"
         class="w-[80vw] h-[70vh] flex px-20 py-10 pb-40 m-auto"
         id="deep"
       >
         <div class="w-1/2 text-yellow-50 flex flex-col justify-center gap-8 pr-6">
           <p class="text-4xl" id="title">{{ video.attributes.title }}</p>
-          <p class="w-5/6 text-lg" id="descript">{{ video.attributes.description }}</p>
+          <p class="w-5/6 text-lg" id="descript">
+            {{ video.attributes.description }}
+          </p>
           <router-link to="" class="aa">
             <button class="text-lg bg-yellow-50 text-zinc-900 py-2 px-4 rounded-md">
               WATCH VIDEO
@@ -47,6 +49,8 @@ const getVideos = async () => {
     videos.value = data;
   });
 };
+
+//reverse the order of the videos
 
 onBeforeMount(() => {
   getVideos();
