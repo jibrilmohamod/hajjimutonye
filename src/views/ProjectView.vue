@@ -1,28 +1,7 @@
 <template>
   <div class="bg-zinc-900 text-yellow-50">
     <TheNav />
-    <div class="w-full">
-      <div class="">
-        <h2 class="text-center text-4xl m-4">
-          {{ currentProject.title }}
-        </h2>
-      </div>
-      <!-- cover image -->
-      <div class="w-full h-[70vh] mb-10">
-        <img :src="currentProject.images[0]"
-             alt=""
-             class="w-full h-full object-cover" />
-      </div>
-      <!-- content -->
-      <div class="w-full">
-        <div class="w-[80vw] mx-auto flex justify-center pb-10"
-             id="d">
-          <p class=""
-             id="content"
-             v-html="currentProject.content"></p>
-        </div>
-      </div>
-    </div>
+    {{ currentProject }}
   </div>
 </template>
 
@@ -134,4 +113,5 @@ useHead({
     padding-left: 1em;
     padding-right: 1em;
   }
-}</style>
+}
+</style>
