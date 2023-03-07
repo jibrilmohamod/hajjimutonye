@@ -7,7 +7,7 @@
            :key="project.id"
            class="w-full">
         <div class="w-full bg-green-600 h-[70vh] my-14">
-          <router-link :to="{}"
+          <router-link :to="{ name: 'images', params: { slug: project.title } }"
                        class="w-full -red-500">
             <img :src="project.images[1]"
                  alt=""
