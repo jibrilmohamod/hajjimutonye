@@ -15,7 +15,7 @@
 
     <div class="w-full">
       <router-link :to="{}"
-                   v-for="project in projects"
+                   v-for="project in featured"
                    :key="project.id"
                    class="w-full h-1/2 flex px-20 py-10"
                    id="deep">
@@ -44,11 +44,15 @@
 
 <script setup>
 import TheHeader from "./ui/TheHeader.vue";
-import { ref } from "vue";
+import { ref, computed } from "vue";
 import TheButton from "./ui/TheButton.vue";
 import data from "../assets/projects.json";
 //  get projects from serve
 const projects = ref(data.projects);
+
+const featured = computed(() => {
+  return projects.value.slice(0, 1);
+})
 
 
 </script>
