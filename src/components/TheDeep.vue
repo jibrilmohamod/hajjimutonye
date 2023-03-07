@@ -30,10 +30,10 @@
             {{ project.description }}
           </p>
         </div>
-        <div class="w-1/2">
+        <div class="w-1/2 text-white">
           <img :src="project.images[0]"
                alt=""
-               class="w-11/12 h-full rounded-md" />
+               class="w-11/12 h-full rounded-md object-cover" />
         </div>
       </router-link>
     </div>
