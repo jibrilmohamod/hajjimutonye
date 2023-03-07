@@ -23,7 +23,7 @@
              id="descript">
             {{ project.description }}
           </p>
-          <router-link :to="{}"
+          <router-link :to="{ name: 'project', params: { slug: project.title } }"
                        class="aa">
             <button class="text-lg bg-yellow-50 text-zinc-900 py-2 px-4 rounded-md">
               READ MORE
