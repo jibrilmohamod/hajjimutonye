@@ -19,22 +19,22 @@
                    :key="project.id"
                    class="w-full h-1/2 flex px-20 py-10"
                    id="deep">
-        <!-- <div class="w-1/2 text-yellow-50 flex flex-col justify-center gap-8 pr-6" id="y">
-          <h2 class="text-4xl" id="title">
-            {{ project.attributes.title }}
+        <div class="w-1/2 text-yellow-50 flex flex-col justify-center gap-8 pr-6"
+             id="y">
+          <h2 class="text-4xl"
+              id="title">
+            {{ project.title }}
           </h2>
-          <p class="w-5/6" id="descript">
-            {{ project.attributes.description }}
+          <p class="w-5/6"
+             id="descript">
+            {{ project.description }}
           </p>
         </div>
         <div class="w-1/2">
-          <img
-            :src="project.attributes.cover.data.attributes.url"
-            alt=""
-            class="w-11/12 h-full rounded-md"
-          />
-        </div> -->
-        {{ project }}
+          <img :src="project.images[0]"
+               alt=""
+               class="w-11/12 h-full rounded-md" />
+        </div>
       </router-link>
     </div>
     <TheButton class="m-auto"><router-link to="/deepdive"
