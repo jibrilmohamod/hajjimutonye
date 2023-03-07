@@ -13,7 +13,7 @@
       </div>
     </div>
 
-    <div class="w-full h-[110vh]">
+    <div class="w-full">
       <router-link :to="{}"
                    v-for="project in projects"
                    :key="project.id"
@@ -119,4 +119,5 @@ const projects = ref(data.projects);
     margin: 0;
     padding-left: 0;
   }
-}</style>
+}
+</style>
