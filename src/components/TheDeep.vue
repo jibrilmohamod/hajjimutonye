@@ -51,7 +51,7 @@ import data from "../assets/projects.json";
 const projects = ref(data.projects);
 
 const featured = computed(() => {
-  return projects.value.slice(0, 1);
+  return projects.value.slice(0, 2);
 })
 
 
