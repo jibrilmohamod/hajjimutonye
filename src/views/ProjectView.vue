@@ -9,7 +9,7 @@
       </div>
       <!-- cover image -->
       <div class="w-full h-[70vh] mb-10">
-        <img :src="currentProject.images[0]"
+        <img :src="currentProject.images[2]"
              alt=""
              class="w-full h-full object-cover" />
       </div>
