@@ -19,7 +19,7 @@
                      id="link">
           <img :src="project.images[0]"
                alt=""
-               class="h-full w-[37vw] rounded-md object-cover"
+               class="h-full w-[30vw] rounded-md object-cover"
                v-animate-onscroll="{ down: 'animated fadeIn' }" />
         </router-link>
       </div>
