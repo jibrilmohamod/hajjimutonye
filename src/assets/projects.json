@@ -7,7 +7,7 @@
    "images": [
     "https://res.cloudinary.com/vueblog/image/upload/v1663176768/Private_Dreams_1x1_17fdb1f720.png",
     "https://res.cloudinary.com/vueblog/image/upload/v1663309875/Haji_Hero_Image_d2c8db364a.png",
-    "https://res.cloudinary.com/vueblog/image/upload/v1663176897/thumbnail_Flower_on_Concrete_758080f52f.jpg",
+    "https://res.cloudinary.com/vueblog/image/upload/v1663176898/Flower_on_Concrete_758080f52f.jpg",
     "https://res.cloudinary.com/vueblog/image/upload/v1663176905/Home_c2c2514216.jpg",
     "https://res.cloudinary.com/vueblog/image/upload/v1663176904/Lonely_castle_1_91abca43b5.jpg",
     "https://res.cloudinary.com/vueblog/image/upload/v1663176905/Roots_b7a4392f8d.jpg",
@@ -21,8 +21,8 @@
    "images": [
     "https://res.cloudinary.com/vueblog/image/upload/v1663310175/CASCO_POSTER_889a275325.png",
     "https://res.cloudinary.com/vueblog/image/upload/v1663310175/CASCO_POSTER_889a275325.png",
-    "image3.jpg",
-    "image4.jpg"
+    "https://res.cloudinary.com/vueblog/image/upload/v1663183976/RAYA_da9d08a394.jpg",
+    "https://res.cloudinary.com/vueblog/image/upload/v1663183975/Micerere2_c273f9034e.jpg"
    ]
   },
   {
@@ -32,8 +32,9 @@
    "images": [
     "https://res.cloudinary.com/vueblog/image/upload/v1663182292/large_The_re_union_1x1_fe15df2b74.png",
     "https://res.cloudinary.com/vueblog/image/upload/v1663309920/The_Re_Union_b7f5154287.png",
-    "image3.jpg",
-    "image4.jpg"
+    "https://res.cloudinary.com/vueblog/image/upload/v1663182348/2_338f7f3ed6.jpg",
+    "https://res.cloudinary.com/vueblog/image/upload/v1663182347/3_9df4a0f566.jpg",
+    "https://res.cloudinary.com/vueblog/image/upload/v1663182345/4_bc012dc949.jpg"
    ]
   },
   {
@@ -43,8 +44,9 @@
    "images": [
     "https://res.cloudinary.com/vueblog/image/upload/v1663182442/large_Trans_Atlantic_1x1_069e13d110.png",
     "https://res.cloudinary.com/vueblog/image/upload/v1663182524/Trans_Atlantic_3_6a043cb053.jpg",
-    "image3.jpg",
-    "image4.jpg"
+    "https://res.cloudinary.com/vueblog/image/upload/v1663182521/Trans_Atlantic4_d458546142.jpg",
+    "https://res.cloudinary.com/vueblog/image/upload/v1663182526/Trans_Atlantic_1_bba460cbf9.jpg",
+    "https://res.cloudinary.com/vueblog/image/upload/v1663182439/Trans_Atlantic_1x1_069e13d110.png"
    ]
   }
  ]
