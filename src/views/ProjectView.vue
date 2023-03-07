@@ -1,7 +1,7 @@
 <template>
   <div class="bg-zinc-900 text-yellow-50">
     <TheNav />
-    {{ currentProject }}
+    {{ currentSlug }}
   </div>
 </template>
 
