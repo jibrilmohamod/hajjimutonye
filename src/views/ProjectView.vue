@@ -91,7 +91,7 @@ useHead({
   font-weight: 300;
 }
 
-#content strong {
+#content h1 {
   font-size: 1.3em;
   font-family: "Mali", cursive;
   font-weight: 600;
