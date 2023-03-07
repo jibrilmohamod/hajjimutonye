@@ -2,12 +2,12 @@
   <div class="bg-zinc-900 text-white pb-16">
     <TheNav />
 
-    {{ currentSlug }}
+    {{ currentProject.images }}
   </div>
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, computed } from "vue";
 import { useRoute } from "vue-router";
 import TheNav from "../components/TheNav.vue";
 
@@ -18,7 +18,9 @@ const projects = ref(data.projects);
 // get project by slug
 const route = useRoute();
 const currentSlug = route.params.slug;
-const currentProject = ''
+const currentProject = computed(() => {
+  return projects.value.find((project) => project.title === currentSlug);
+});
 </script>
 
 <style lang="scss" scoped>
