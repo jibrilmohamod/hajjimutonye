@@ -46,7 +46,7 @@ useHead({
 </script>
 
 <template>
-  <main class="w-[100vw] md:w-full border border-red-400">
+  <main class="w-[100vw] md:w-full border border-red-400 overflow-hidden">
     <header>
       <TheName></TheName>
     </header>
