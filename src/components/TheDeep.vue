@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-zinc-900 h-[150vh]  flex flex-col"
+  <div class="bg-zinc-900 w-[100vw] h-[150vh]  flex flex-col"
        id="t">
     <div class="h-[20vh]">
       <TheHeader class="mb-10">
