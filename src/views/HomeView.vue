@@ -1,5 +1,5 @@
 <template>
-  <div class="p-2 md:p-0 overflow-hidden">
+  <div class="w-[100vw] outline outline-red-600">
     <TheHero></TheHero>
     <TheProfile></TheProfile>
     <TheWorks></TheWorks>
