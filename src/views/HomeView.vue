@@ -1,5 +1,5 @@
 <template>
-  <div class="w-[100vw] outline outline-red-600">
+  <div>
     <TheHero></TheHero>
     <TheProfile></TheProfile>
     <TheWorks></TheWorks>

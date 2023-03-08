@@ -46,7 +46,7 @@ useHead({
 </script>
 
 <template>
-  <main class="">
+  <main class="w-[100vw] outline outline-red-600">
     <header>
       <TheName></TheName>
     </header>
@@ -66,6 +66,7 @@ useHead({
   font-weight: 500;
   scroll-behavior: smooth;
 }
+
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 1.2s ease;
