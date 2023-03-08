@@ -46,18 +46,19 @@ useHead({
 </script>
 
 <template>
-  <main class="w-[100vw] outline outline-red-600">
+  <main class="w-[90vw] outline outline-red-400">
     <header>
       <TheName></TheName>
     </header>
-  </main>
 
-  <router-view v-slot="{ Component }">
-    <transition name="fade">
-      <component :is="Component" />
-    </transition>
-  </router-view>
-  <TheFooter />
+
+    <router-view v-slot="{ Component }">
+      <transition name="fade">
+        <component :is="Component" />
+      </transition>
+    </router-view>
+    <TheFooter />
+  </main>
 </template>
 
 <style>
