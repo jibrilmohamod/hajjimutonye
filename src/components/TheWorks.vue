@@ -1,5 +1,5 @@
 <template>
-  <div class="h-[120vh] w-full bg-zinc-900 px-32 flex flex-col items-center"
+  <div class="h-[120vh]  bg-zinc-900 px-32 flex flex-col items-center"
        id="t">
     <!-- title -->
     <TheHeader class="hr">

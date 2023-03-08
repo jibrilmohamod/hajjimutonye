@@ -2,7 +2,7 @@
   <div class="bg-zinc-900"
        id="t">
     <TheNav />
-    <div class="w-full pt-10">
+    <div class="pt-10">
       <TheHeader>DEEP DIVE</TheHeader>
       <p class="text-2xl text-yellow-50 text-center pt-3"
          id="description">
