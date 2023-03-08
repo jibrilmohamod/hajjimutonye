@@ -8,10 +8,10 @@
         </h2>
       </div>
       <!-- cover image -->
-      <div class="w-full h-[70vh] mb-10">
+      <div class="w-full h-fit md:h-[70vh] mb-10">
         <img :src="currentProject.images[2]"
              alt=""
-             class="w-full h-[70vh] md:object-cover object-contain" />
+             class="w-full h-full md:object-cover object-contain" />
       </div>
       <!-- content -->
       <div class="w-full">
