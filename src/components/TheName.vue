@@ -1,8 +1,11 @@
 <template>
-  <div class="">
-    <router-link to="/" class="l">
+  <div class="w-full">
+    <router-link to="/"
+                 class="">
       <h1>
-        <img src="../assets/images/You.svg" alt="" class="w-full" />
+        <img src="../assets/images/You.svg"
+             alt=""
+             class="w-full" />
       </h1>
     </router-link>
   </div>
@@ -18,11 +21,13 @@ import { RouterLink } from "vue-router";
     width: 100vw;
     height: 10vh;
   }
+
   .l {
     width: 100vw;
     padding: 0;
     margin: 0;
   }
+
   div {
     width: 100vw;
     padding: 0;
