@@ -11,7 +11,7 @@
       <div class="w-full h-[70vh] mb-10">
         <img :src="currentProject.images[2]"
              alt=""
-             class="w-full h-full object-cover" />
+             class="w-full h-full md:object-cover object-contain" />
       </div>
       <!-- content -->
       <div class="w-full">
