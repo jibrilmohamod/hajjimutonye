@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="p-2 md:p-0 overflow-hidden">
     <TheHero></TheHero>
     <TheProfile></TheProfile>
     <TheWorks></TheWorks>
